@@ -1,0 +1,29 @@
+package Sliding_Window;
+
+public class SlidingWindow_of_SubArray {
+
+	public static void main(String[] args) {
+		int[] arr= {2,3,4,5,6};
+		int n=arr.length;
+		int l=0;
+		int ans=0;
+		int temp=0;
+		int sl=3;
+		for(int r=0;r<n;r++)
+		{
+			temp+=arr[r];
+			if(r-l==sl)
+			{
+				temp-=arr[l];
+				l++;
+			}
+			if(r-l+1==sl)
+			{
+				ans=Math.max(ans,temp);
+			}
+		}
+		System.out.print(ans);
+
+	}
+
+}
