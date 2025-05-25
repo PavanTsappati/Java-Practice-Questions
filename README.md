@@ -16,7 +16,6 @@ src/
 ├── Recurssion/            # Recursive algorithms
 ├── Sliding_Window/        # Sliding window pattern problems
 ├── Stack/                 # Stack implementation and problems
-└── module-info.java       # Module descriptor (Java 9+)
 ```
 
 ---
